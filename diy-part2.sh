@@ -12,3 +12,9 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.18.2/g' package/base-files/files/bin/config_generate
+
+########### 安装msd_lite ###########
+# rm -rf feeds/luci/applications/luci-app-msd_lite
+# git clone https://github.com/ximiTech/luci-app-msd_lite.git feeds/luci/applications/luci-app-msd_lite
+rm -rf feeds/packages/net/msd_lite
+git clone https://github.com/ximiTech/msd_lite.git feeds/packages/net/msd_lite
